@@ -8,4 +8,5 @@ public class School {
     private final String schoolAddress = "Orchid hotel road";
     public List<Staff> listOfStaffs = new ArrayList<>();
     public List<Teacher> listOfTeachers = new ArrayList<>();
+    public List<Student> listOfStudents = new ArrayList<>();
 }
