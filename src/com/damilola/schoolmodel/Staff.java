@@ -1,13 +1,11 @@
 package com.damilola.schoolmodel;
 
-public class Staff {
+public class Staff extends Personnel {
     private int staffId;
     private String position;
     private double salary;
 
-    public Staff(){
 
-    }
 
     public int getStaffId() {
         return staffId;
@@ -31,5 +29,21 @@ public class Staff {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public Staff(String name, int age, String gender, String address, int staffId, String position, double salary) {
+        super(name, age, gender, address);
+        this.staffId = staffId;
+        this.position = position;
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "staffId=" + staffId +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
