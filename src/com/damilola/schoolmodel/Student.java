@@ -1,11 +1,13 @@
 package com.damilola.schoolmodel;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Student extends Personnel{
     private int studentId;
     private String studentLevel;
+    Map<String, List<Course>> courseOffered = new HashMap<>();
 
     public Student(String name, int age, String gender, String address, int studentId, String studentLevel) {
         super(name, age, gender, address);
