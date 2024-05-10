@@ -2,7 +2,7 @@ package com.damilola.schoolmodel;
 
 public class Applicant {
     private String applicantName;
-    private int applicationAge;
+    private int applicantAge;
     private String applicantGender;
     private String applicantAddress;
     private String applicantLevel;
@@ -15,12 +15,12 @@ public class Applicant {
         this.applicantName = applicantName;
     }
 
-    public int getApplicationAge() {
-        return applicationAge;
+    public int getApplicantAge() {
+        return applicantAge;
     }
 
-    public void setApplicationAge(int applicationAge) {
-        this.applicationAge = applicationAge;
+    public void setApplicantAge(int applicantAge) {
+        this.applicantAge = applicantAge;
     }
 
     public String getApplicantGender() {
@@ -47,11 +47,11 @@ public class Applicant {
         this.applicantLevel = applicantLevel;
     }
 
-    public Applicant(String applicantName, int applicationAge, String applicantGender, String applicantAddress, String applicantLevel) {
+    public Applicant(String applicantName, int applicantAge, String applicantGender, String applicantAddress, String applicantLevel) {
         this.applicantName = applicantName;
         this.applicantAddress = applicantAddress;
         this.applicantGender = applicantGender;
-        this.applicationAge = applicationAge;
+        this.applicantAge = applicantAge;
         this.applicantLevel = applicantLevel;
     }
 }
