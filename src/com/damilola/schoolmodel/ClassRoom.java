@@ -24,8 +24,10 @@ public class ClassRoom {
         * */
        if(course.getCourseName().equals(teacher.getCourseBeingHandled())){
            System.out.println(course.getCourseName() + " teacher is currently teaching in " + classRoom.getClassName() + " class.");
+       }else{
+           throw  new WrongClassException("You are in the wrong class");
        }
-       throw  new WrongClassException("You are in the wrong class");
+
     }
 
     public void studentAttendingClass(Course course, Student student, ClassRoom classRoom) throws WrongClassException{
@@ -37,6 +39,9 @@ public class ClassRoom {
         if(student.getStudentLevel().equals(classRoom.getClassName())){
             System.out.println(student.getName() + " is in attendance for " + course.getCourseName() +
                     " lessons in " + classRoom.getClassName() + " class");
+        }
+        else {
+            throw new WrongClassException("You're in the wrong class");
         }
     }
 }
