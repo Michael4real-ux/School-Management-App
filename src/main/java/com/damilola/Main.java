@@ -4,9 +4,6 @@ import com.damilola.exception.NotQualifiedException;
 import com.damilola.exception.WrongClassException;
 import com.damilola.schoolmodel.*;
 
-import java.awt.*;
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) throws NotQualifiedException, WrongClassException {
