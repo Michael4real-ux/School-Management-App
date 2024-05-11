@@ -1,18 +1,18 @@
 package com.damilola.schoolmodel;
 
 public class Teacher extends Staff {
-    private String courseBeingOffered;
+    private String courseBeingHandled;
 
-    public Teacher(String name, int age, String gender, String address, int staffId, String position, double salary, String courseBeingOffered) {
+    public Teacher(String name, int age, String gender, String address, int staffId, String position, double salary, String courseBeingHandled) {
         super(name, age, gender, address, staffId, position, salary);
-        this.courseBeingOffered = courseBeingOffered;
+        this.courseBeingHandled = courseBeingHandled;
     }
 
-    public String getCourseBeingOffered() {
-        return courseBeingOffered;
+    public String getCourseBeingHandled() {
+        return courseBeingHandled;
     }
 
-    public void setCourseBeingOffered(String courseBeingOffered) {
-        this.courseBeingOffered = courseBeingOffered;
+    public void setCourseBeingHandled(String courseBeingHandled) {
+        this.courseBeingHandled = courseBeingHandled;
     }
 }

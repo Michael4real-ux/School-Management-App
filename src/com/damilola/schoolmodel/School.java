@@ -9,6 +9,7 @@ public class School {
     public List<Staff> listOfStaffs = new ArrayList<>();
     public List<Teacher> listOfTeachers = new ArrayList<>();
     public List<Student> listOfStudents = new ArrayList<>();
+    public List<Course> listOfCourses = new ArrayList<>();
 
     public String getSchoolName() {
         return schoolName;
