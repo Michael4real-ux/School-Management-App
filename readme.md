@@ -1,4 +1,4 @@
-## School Management App
+## School Management Cli System
 
 Problem Description
 You are to model a department using an object oriented programming (OOP) paradigm. A basic school is made up of the following.
